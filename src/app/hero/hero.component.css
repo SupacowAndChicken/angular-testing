@@ -1,0 +1,20 @@
+.hero {
+  background-color:#365232;
+  height:500px;
+  width:1000px;
+}
+
+.moep {
+margin-left:70px;
+margin-top:60px;
+padding-left:90px;
+width: 300px;
+background-color:rgb(64, 25, 204);
+}
+.herolist{
+margin-top:100px;
+}
+
+.element {
+font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,42 @@
+<div class="hero">
+<p>Hello ich bin die first component und unter mir steht der Inhalt der second component</p>
+
+
+<!-- data-binding -> interpolation {{hero.name}} -> name is a property from class hero ,
+presented as a string in html.
+-->
+
+
+
+</div>
+
+
+ <!-- ngModel is Angular Syntax to bind the hero.name property to the input box!
+      Data flows in both directions! ngModel directive
+      1. from the property to the input field -> the inputfield shows hero.name
+      2. from the inputfield to the property of hero ->if the input change the property value updatet!
+-->
+<div>
+<label>name: </label>
+<tr></tr>
+<input [(ngModel)]="selectedHero.name" placeholder="name">  <!-- placeholder is for the-->
+<input [(ngModel)]="selectedHero.id" placeholder="id">
+</div>
+
+<!-- Showing the Heroes from the HEROES Array in a List
+    1. html structure for a list
+    2. iterate over the HEROES Array -> *ngFor structural directive
+    3. If we want to add an index, add another variable to ngFor -> i = index (index is a special keyword !!!)
+    4. beacause if we use i the index starts with 0!!!
+-->
+<h2>My Heroes</h2>
+<ul class="heroes">
+<li *ngFor="let hero of heroes" >
+<span class="badge"> {{hero.id}}</span> {{hero.name}}
+</li>
+
+</ul>
+
+
+<app-hero></app-hero>
+<app-second-component></app-second-component>
